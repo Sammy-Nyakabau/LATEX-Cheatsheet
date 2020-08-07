@@ -2,4 +2,4 @@
 
 # LATEX-Cheatsheet
 
-This repo conains small code snippets (with explanation) that highlight the fundamentals of [LaTex](https://www.latex-project.org/) typesetting system.
+This repo contains small code snippets (with explanation) that highlight the fundamentals of [LaTex](https://www.latex-project.org/) typesetting system.
