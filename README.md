@@ -6,10 +6,10 @@ This repo contains small code snippets (with explanation) that highlight the fun
 
 ## Table of Contents :book:
 
-1. Introduction
-2. Paper Types
-3. Layout
-4. Packages
+1. [Introduction](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#introduction)
+2. [Paper Types](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#paper-types)
+3. [Layout](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#layout)
+4. [Packages](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#packages)
 5. Custom Commands
 6. Document Environment
 7. Using Pictures
@@ -31,6 +31,8 @@ This repo contains small code snippets (with explanation) that highlight the fun
 > LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents.
 
 - Commands start with a `\name [optional arguments] {required arguments}`
+
+---
 
 ### Paper Types
 
@@ -64,6 +66,8 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ```tex
 \documentclass[a4paper,12pt, landscape, twocolumn]{book}
 ```
+
+---
 
 ### Packages
 
@@ -135,3 +139,5 @@ This repo contains small code snippets (with explanation) that highlight the fun
 \makeindex
 
 ```
+
+---
