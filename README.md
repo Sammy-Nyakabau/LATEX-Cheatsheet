@@ -10,7 +10,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 2. [Paper Types](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#paper-types)
 3. [Layout](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#layout)
 4. [Packages](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#packages)
-5. Custom Commands
+5. [Custom Commands](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#custom-commands)
 6. Document Environment
 7. Using Pictures
 8. Spacing
