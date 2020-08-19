@@ -141,3 +141,27 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ```
 
 ---
+
+### Custom Commands
+
+- You can define your own commands
+  - Anytime you type `\NTT\` New Think Tank will show
+
+  ```tex
+  \newcommand{\NTT}{New Think Tank}
+   ```
+  - Or, New Think Tank in **bold** 
+
+  ```tex
+  \newcommand{\NTTB}{\textbf{New Think Tank}}
+   ```
+  - We can add styling to whatever text is passed
+
+  ```tex
+  \newcommand{\typew}[1]{\texttt{#1}}
+
+  % Using custom command 
+  Style to \typew{typewriter}.
+   ```
+
+---
