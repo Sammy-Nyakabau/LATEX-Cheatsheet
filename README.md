@@ -11,7 +11,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 3. [Layout](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#layout)
 4. [Packages](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#packages)
 5. [Custom Commands](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#custom-commands)
-6. Document Environment
+6. [Document Environment](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#document-environment)
 7. Using Pictures
 8. Spacing
 9. Lists
@@ -191,12 +191,10 @@ This repo contains small code snippets (with explanation) that highlight the fun
     ```tex 
     \pagenumbering{roman}
     ```
-
- 
-- Start numbering with page 2
-  ```tex 
-  \setcounter{page}{2}
-  ```
+  - Start numbering with page 2
+    ```tex 
+    \setcounter{page}{2}
+    ```
  
 - Clear default headers & footers
   ```tex 
@@ -253,6 +251,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
   ```tex 
   \newpage
   ``` 
+---
  
 
  
