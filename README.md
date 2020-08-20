@@ -165,3 +165,94 @@ This repo contains small code snippets (with explanation) that highlight the fun
    ```
 
 ---
+
+### Document Environment
+
+- This block is called the environment
+  - Prints the title, author and date
+    ```tex
+    \begin{document}
+    \title{\Large{\textbf{LaTeX Cheatsheet}}}
+    \author{Sammy Nyakabu}
+    \date{today}
+
+    \maketitle
+    \let\cleardoublepage\clearpage
+    ```
+
+ 
+
+- Print a table of contents using info in section headings
+  - Run Typeset twice to create it
+    ```tex 
+    \tableofcontents
+    ```
+  - Use roman numeral page numbering
+    ```tex 
+    \pagenumbering{roman}
+    ```
+
+ 
+- Start numbering with page 2
+  ```tex 
+  \setcounter{page}{2}
+  ```
+ 
+- Clear default headers & footers
+  ```tex 
+  \pagestyle{fancy}
+  ```
+
+- Draw a decorative line at the top & bottom of the page
+  ```tex 
+  \fancyhf{}
+  ```
+
+- Styling the Header and the Footer
+  ```tex 
+  \renewcommand{\headrulewidth}{2pt}
+  \renewcommand{\footrulewidth}{1pt}
+  
+  % Use different headers for even & odd pages
+  
+  % leftmark : Chapter title, number, LE - left side on even pages
+  
+  % Uppercase by default
+  
+  \fancyhead[LE]{\leftmark}
+  
+  % rightmark : Chapter title, number, RO - right side on odd pages
+  
+  % Make lowercase
+  
+  \fancyhead[RO]{\nouppercase{\rightmark}}
+  
+  % Use the same footer for pages
+  
+  \fancyfoot[LE,RO]{\thepage}
+  ```
+
+- Define the page style for all pages going forward
+  ```tex 
+  \chapter{Chapter Name}
+  \blindtext
+  \section{A Section}
+  ``` 
+
+- Squeeze another line on to the previous page
+  ```tex 
+  \enlargethispage{\baselineskip}
+  ``` 
+ 
+- Add a page break and stretch text to fill the page
+  ```tex 
+  \pagebreak
+  ``` 
+
+- Add a page break, but don't stretch text
+  ```tex 
+  \newpage
+  ``` 
+ 
+
+ 
