@@ -12,7 +12,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 4. [Packages](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#packages)
 5. [Custom Commands](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#custom-commands)
 6. [Document Environment](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#document-environment)
-7. Using Pictures
+7. [Using Pictures](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#using-pictures)
 8. Spacing
 9. Lists
    - Bulleted
