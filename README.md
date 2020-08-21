@@ -252,6 +252,64 @@ This repo contains small code snippets (with explanation) that highlight the fun
   \newpage
   ``` 
 ---
+
+### Using Pictures
+
+- Define where we want the image placed
+  -  h : Here, t : Top of page, b : Bottom, p : Separate Page
+      ```tex 
+      \begin{figure}[ht]
+      \centering
+      ```
+  -  Include picture and define width (height automatically scales)
+  - Also scale=0.5 (Scales by half)
+  - angle=90 (Rotate 90 degrees)
+    ```tex 
+    \includegraphics[width=8cm]{pic.png}
+    \end{figure}
+    ```
+ 
+- Wrapping text around an image
+  - Group the text and image
+    ```tex
+    \begingroup
+    ```
+ 
+  - Set space above and below float to 0
+    ```tex
+    \setlength{\intextsep}{0pt}
+    ```
+
+  - Set distance between columns
+    ```tex
+    \setlength{\columnsep}{15pt}
+    ```
+ 
+  - Text wraps around images
+  - Position image to the right with r
+  - Also can use l : Left, i : Inside Edge and o : Outside Edge
+  - `0.45\textwidth` : Size image width relative to the text width
+    ```tex
+    \begin{wrapfigure}{r}{0.45\textwidth}
+    \centering
+    % Place image
+    
+      \includegraphics[width=\linewidth]{pic.png}
+      % I can assign a label I can refer to later
+      \caption{Pretty Picture}\label{fig:prettypic}
+    \end{wrapfigure}
+    
+    \blindtext
+    
+    \endgroup
+    ```
+---
+ 
+
+ 
+
+ 
+
  
 
  
