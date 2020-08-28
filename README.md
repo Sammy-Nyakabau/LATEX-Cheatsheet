@@ -412,6 +412,24 @@ This repo contains small code snippets (with explanation) that highlight the fun
  ```
 ---
 
+### Tabbing
+
+```tex
+\begin{tabbing}
+ 
+% On setup row define where tabs occur and the space to set aside
+ 
+Customer  \= Name \hspace*{1.5cm} \= Street \hspace*{1.5cm} \= City \\
+ 
+% \> Jumps to the next tab
+ 
+\> Sammy Nyakabau \> --- \> --- \\
+\end{tabbing}
+```
+---
+
+
+
  
 
  
