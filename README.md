@@ -304,9 +304,113 @@ This repo contains small code snippets (with explanation) that highlight the fun
     \endgroup
     ```
 ---
- 
 
+### Spacing
  
+- `\\` creates a line break
+ 
+- `\nolinebreak` prevents line breaks `\nolinebreak[1] - [4]` requests stronger
+
+- Add a 10 pts of space between this line and the next
+  ```tex
+  If      we     use    multiple spaces     it    won't    matter\\[10pt]
+  ```
+ 
+- Cancel the indent
+ 
+  - Eliminate paragraph indents with `\usepackage{parskip}`
+ 
+    ```tex 
+    \noindent Special characters can be escaped \% \$ \& \_ \textbackslash
+    ```
+ - Line Spacing
+    - Increase the line spacing : singlespacing, onehalfspacing, doublespacing
+    
+    ```tex 
+    \usepackage[onehalfspacing]{setspace}
+    ```
+- Another way to add space between paragraphs
+ 
+  ```tex
+  \bigskip
+  ```
+---
+
+### Lists
+
+#### Bulleted Lists
+
+- Create a bulleted list
+  - You can add an abbreviated name for the table of contents between []
+  ```tex
+  \section[Technologies]{Web Technologies}
+  \begin{itemize}
+    \item Browsers
+    \item HTML and CSS
+    \item Web Dev Frameworks
+    % Create a list in a list
+    \begin{itemize}
+      \item ReactJS
+      \item Angular
+    \end{itemize}
+    \item 6 Programming Languages
+  \end{itemize}
+  ```
+ 
+- `\item[customNumbering]` allows for any numbering scheme
+---
+ 
+#### Numbered Lists
+
+- You can change the numbering \arabic*, \alpha*, \Alph*, \roman*
+- You can change the font just for the numbering
+ ```tex
+ /section{Programming Languages and their Frameworks }
+\begin{enumerate}[label=\Roman*, font=\bfseries]
+	\item JavaScript
+	\begin{itemize}
+		\item 1 ReactJS  
+		\item 1 Angular  
+		\item 1 ExpressJS  
+	\end{itemize}
+	\item Java
+	\begin{itemize}
+		\item Spring
+		\item Structs
+		\item Hibernate
+	\end{itemize}
+	\item Python
+	\begin{itemize}
+		\item Django
+		\item Flask
+		\item Web2py
+	\end{itemize}
+	\item Ruby
+	\begin{itemize}
+		\item Roda
+		\item Ruby on Rails
+	\end{itemize}
+\end{enumerate}
+ ```
+- Nesting numbering goes from 1 to a to i. to A.
+- You can compact the list by replacing enumerate with compactenum and itemize with compactitem and add `\usepackage{paralist}`
+- You can compact lists with this
+ ```tex
+  \setlist{nolistsep}
+ ```
+ ---
+ 
+ #### Definition Lists
+
+ ```tex 
+\begin{description}
+	\item[JavaScript] React, Angular, Express, 
+	\item[Java] Spring, Hibernate
+	\item[Ruby] Roda, Ruby on Rails
+	\item[Python] Django, Flask, Web2py
+\end{description}
+ ```
+---
 
  
 
