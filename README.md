@@ -427,11 +427,259 @@ Customer  \= Name \hspace*{1.5cm} \= Street \hspace*{1.5cm} \= City \\
 \end{tabbing}
 ```
 ---
+### Tables, Type Emphasis & Fonts
+ 
+- Wrap a table around tabular to make captions
 
+  ```tex
+  \begin{table}
+  % Define a table with 3 left aligned columns (Use c (Center) or r (Right)
+  
+  % The center | creates a vertical line
+  
+  \begin{tabular}{l|l|l}
+  
+  % Draw horizontal line
+  
+  % \usepackage{booktabs} provides different line thicknesses
+  
+  % \toprule, \midrule, \bottomrule
+  
+  \hline
+  
+  % & Defines the breaks in the table
+  
+  \textbf{Name} & \textbf{Command} & \textbf{Sample Text} \\
+  \hline
+  % \verb| | allows you to type commands
+  
+  emphasize & \verb|\emph| & \emph{abcdefgh} \\
+  italic & \verb|\textit| & \textit{abcdefgh} \\
+  slanted & \verb|\textbf| & \textbf{abcdefgh} \\
+  bold & \verb|\emph| & \emph{abcdefgh} \\
+  small capped & \verb|\textsc| & \textsc{abcdefgh} \\
+  medium & \verb|\textmd| & \textmd{abcdefgh} \\
+  upright & \verb|\textup| & \textup{abcdefgh} \\
+  roman family & \verb|\textrm| & \textrm{abcdefgh} \\
+  sans serif & \verb|\textsf| & \textsf{abcdefgh} \\
+  typewriter & \verb|\texttt| & \texttt{abcdefgh} \\
+  combo & \verb|\textup{\textbf{}}| & \textit{\textbf{abcdefgh}} \\
+  \end{tabular}
+  \caption{Ways to emphasize text}
+  \end{table}
+  ```
+  ![Latex Table](https://i.ibb.co/tZhjkHW/LATEX.png)
+ 
+- Leave some columns blank & merge others
+ 
+ ```tex 
+  % Create 3 columns
+  
+  \begin{tabular}{@{}*3l@{}}
+  
+  % Take up to columns with Name and 1 with age
+  
+  \multicolumn{2}{c}{Name} &
+  \multicolumn{1}{c}{Age}\\
+  
+  % Add headers with the last left blank
+  
+  First & Last & \\
+  \hline
+  Sammy & Nyakabau & 00\\
+  Jane & Doe & 00\\
+  \end{tabular}//
+ ```
+---
 
+### Accent Characters
 
+- These is a package that allows you to enter accented characters
+- `\usepackage[utf8]{inputenc}` on Linux/MacOS and 
+- `\usepackage[latin1]{inputenc} on Windows`
+  ```tex
+    \'{a} \^{e} `{o} \"{u} \.{a} \={o} \~{n} \u{a} \H{a} \v{e} \t{oo} \c{c} \d{n} \b{i}
+  ```
+- There are numerous fonts [here](http://www.tug.dk/FontCatalogue/) 
+---
+
+### More Type Emphasis 
+ 
+-  Abbreviate listing in table of contents to just Type and make sans serif font
+- I use label here so I can refer to this section later
+ 
+  ```tex
+    \section[Type]{\textsf{Type Emphasis \& Sizing}} \label{sec:typeemp}
+  ```
+ 
+- If you want font changes to continue `\itshape` *italic*, `\slshape` slanted, `\scshape` small caps, `\upshape` upright, `\normalfont` back to normal
+ 
+- As you change text size that size remains after the command
+ ```tex
+  Get Smaller : \normalsize{normal}, \small{small}, \footnotesize{footnote}, \scriptsize{script}, \tiny{tiny}
+  
+  Get Bigger : \large{large}, \Large{larger}, \LARGE{larger}, \huge{huge}, \Huge{Hugest}
+ ```
+ 
+- Apply sizing change over a block of text
+ ```tex
+  \begin{LARGE}
+    I want to use a big font
+  \end{LARGE}
+
+  \normalsize{Back to normal}
+ ```
+- More on Font Families
+
+```tex 
+\section{\textsf{Font Families}}
+We can {\sffamily temporarily change} a font family, \ttfamily or change it for the rest of the document \sffamily
+```
+ 
+- Create quotes
+
+```tex
+\begin{quote}
+``I like long walks, especially when they are taken by people who annoy me.'' 
+- Fred Allen
+\end{quote} 
+```
+---
+
+### Math Formulas 
+ 
+- Using this package : `\usepackage{amsmath}`
+- `flalign*` with formula surrounded with `&`s makes it left justified
+ 
+  - Quadratic Equation
+  ```tex
+  \begin{flalign*}
+    & ax^2 + bx + c = 0 &\\
+  \end{flalign*}
+  ```
+- Place a formula in text
+  ```tex
+  This \( ax^2 + bx + c = 0 \) is the quadratic equation \\
+  ```
+- I prefer the $ TeX shortcut
+  - Quadratic Formula
+  ```tex
+  $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$ \\
+  ```
+ 
+- List of LaTeX Symbols http://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf
  
 
+```tex
+  Greek letters $\alpha \beta \gamma \delta \epsilon \zeta \eta \theta 
+\vartheta  \iota \kappa \lambda \Lambda \mu \nu \xi \Xi \pi \Pi
+\rho \varrho \sigma \Sigma \tau \upsilon \Upsilon \phi \varphi \Phi
+\chi \psi \Psi \Omega \omega $ \\ 
+ 
+Script letters $\mathcal{A}, \mathcal{B}$
+ 
+Subscript $t_0$ \\ 
+ 
+Superscript $x^2$ \\ 
+ 
+Vectors $\vec{a}\cdot\hat{x}=a_x$
+ 
+Matrices
+$\begin{pmatrix} 
+1 & 2 \\ 
+3 & 4 
+\end{pmatrix}$
+ 
+Integrals $\Delta x=\int_{t_0}^{t_1} v(t)dt$ \\
+ 
+Limits $\lim_{x\to0} \frac 1 x = \infty$ \\ 
+ 
+Summations $e^x=\sum_{n=0}^\infty\frac{x^n}{n!}$ \\
+ 
+Operators $\arccos, \arcsin, \arctan, \arg, \cos, \cosh, \cot, \coth, \deg, 
+\det, \dim, \exp, \gcd,\\ \hom, \inf, \ker, \lim, \lg, \liminf, \limsup, \ln, \log, 
+\max, \min, \Pr, \sec, \sin, \sinh, \sup, \tan, \tanh$ \\
+ 
+Arrows $\leftarrow, \Leftarrow, \rightarrow, \Rightarrow, \leftrightarrow, \rightleftharpoons,
+ \uparrow, \downarrow, \Uparrow, \Downarrow, \Leftrightarrow, \Updownarrow, \mapsto, \longmapsto, 
+ \nearrow, \searrow, \swarrow, \nwarrow, \leftharpoonup, \rightharpoonup, \leftharpoondown, \rightharpoondown$ \\
+ 
+ Relational Operators $ \geq, \gg, \leq, \ll, \neq $ \\
+ 
+Binary Operation/Relation Symbols $ \approx, \asymp, \bowtie, \cong, \dashv, \doteq, 
+\equiv, \frown, \mid, \models, \parallel, \perp, \prec, \preceq, \propto, \sim, \simeq, \smile, 
+\succ, \succeq, \vdash $ \\
+```
+---
+### Text Boxes & Justification 
+  
+- You can center text
+ 
+```tex
+  {\centering
+  Get in the middle of me\\
+  Okay\\[10pt]
+  }
+```
+ 
+- Create a fully justified column 4cm wide
+ 
+```tex
+ \parbox{4cm}{I used to think I was indecisive, but now I'm not too sure.}
+```
+ 
+- `[t]{2cm}` aligns to top, `[b]` aligns to bottom, `[s]` stretches vertically, `[c]` centers
+- `\quad` adds horizontal spacing between the boxes
+ 
+ ```tex
+  \quad\parbox{2cm}{I used to think I was indecisive, but now I'm not too sure.}
+  % You can define hyphenation with\-
+  \quad\parbox{2cm}{Always re\-mem\-ber that you're unique. Just like everyone.}
+  % raggedright eliminates justification and hyphenation (Justifies Left)
+  
+  % You can do this document wide if typed in the preamble
+  
+  \quad\parbox{2cm}{\raggedright I always wanted to be somebody, but I should have been more specific.}
+  % raggedleft eliminates justification and hyphenation (Justifies Right)
+  
+  \quad\parbox{2cm}{\raggedleft When I was a kid my parents moved a lot, but I always found them. }
+ ```
+ 
+- Minipages are blocks of text that will maintain size restrictions
+ 
+```tex
+\begin{minipage}{5cm}
+ 
+One advantage of talking to yourself is that you know at least somebody's listening.
+ 
+\end{minipage}
+```
+---
+
+### Referencing Content
+
+- You can add footnotes and override the numbering 
+- Add a 5 pts of space between this line and the next
+```tex
+The answer you're looking for is inside of you, but it's wrong.\footnote[2]{author unknown} \\[5pt]
+``` 
+- You can get the section with `\ref` and the page with `\pageref`
+ 
+```tex
+  There is a great table on Type Emphasis is in this section~\ref{sec:typeemp} on page~\pageref{sec:typeemp}\\[2pt]
+  There is a pretty picture in section~\ref{fig:prettypic} on page~\pageref{fig:prettypic}\\[2pt]
+```
+
+- Listing references in a bibliography
+ 
+```tex
+How I learned my ABCs \cite{ABCAFR}. 
+ 
+\begin{thebibliography} {books}
+\bibitem{ABCAFR} Walter Abish \emph{The Alphabetical Africa}, 1974
+\end{thebibliography} 
+```
+---
  
 
  
