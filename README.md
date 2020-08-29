@@ -69,7 +69,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Packages :pencil:
+### Packages :briefcase:
 
 - You can import packages to add functionality
 - Get more info on any package by typing `texdoc PackageName` in the terminal or command line
