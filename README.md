@@ -13,19 +13,19 @@ This repo contains small code snippets (with explanation) that highlight the fun
 5. [Custom Commands](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#custom-commands)
 6. [Document Environment](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#document-environment)
 7. [Using Pictures](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#using-pictures)
-8. Spacing
-9. Lists
-   - Bulleted
-   - Numbered
-   - Definition
-10. Tabbing
-11. Tables, Type Emphasis & Fonts
-12. Accent Characters
-13. More Type Emphasis
-14. Math Formulae
-15. Text Boxes & Justification
-16. Referencing Content
-
+8. [Spacing](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#spacing)
+9. [Lists](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#lists)
+   - [Bulleted](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#bulleted-lists)
+   - [Numbered](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#numbered-lists)
+   - [Definition](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#definition-lists)
+10. [Tabbing](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#tabbing)
+11. [Tables, Type Emphasis & Fonts](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#tables-type-emphasis--fonts)
+12. [Accent Characters](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#accent-characters)
+13. [More Type Emphasis](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#more-type-emphasis)
+14. [Math Formulae](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#math-formulas)
+15. [Text Boxes & Justification](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#text-boxes--justification)
+16. [Referencing Content](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#referencing-content)
+---
 ### Introduction
 
 > LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents.
