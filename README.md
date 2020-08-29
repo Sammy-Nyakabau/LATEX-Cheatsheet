@@ -34,7 +34,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 
 ---
 
-### Paper Types
+### Paper Types :page_with_curl:
 
 - Document will be printed on a4 paper, using the 12pt default font
 - We can define that we want to use the report class template
@@ -50,7 +50,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Layout
+### Layout :pencil:
 
 - Layout types are listed as optional arguments in the `/documentclass` command
 - Layout Types:
@@ -69,7 +69,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Packages
+### Packages :pencil:
 
 - You can import packages to add functionality
 - Get more info on any package by typing `texdoc PackageName` in the terminal or command line
@@ -142,7 +142,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Custom Commands
+### Custom Commands :pencil2:
 
 - You can define your own commands
   - Anytime you type `\NTT\` New Think Tank will show
@@ -166,7 +166,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Document Environment
+### Document Environment :notebook_with_decorative_cover:
 
 - This block is called the environment
   - Prints the title, author and date
@@ -254,7 +254,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Using Pictures
+### Using Pictures :camera: :flower_playing_cards:
 
 - Define where we want the image placed
   -  h : Here, t : Top of page, b : Bottom, p : Separate Page
@@ -307,7 +307,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Spacing
+### Spacing :rocket:
  
 - `\\` creates a line break
  
@@ -339,7 +339,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Lists
+### Lists :clipboard: :pushpin:
 
 #### Bulleted Lists
 
@@ -417,7 +417,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
  ```
 ---
 
-### Tabbing
+### Tabbing :arrow_forward: :arrow_right:
 
 ```tex
 \begin{tabbing}
@@ -433,7 +433,7 @@ Customer  \= Name \hspace*{1.5cm} \= Street \hspace*{1.5cm} \= City \\
 ```
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
-### Tables, Type Emphasis & Fonts
+### Tables, Type Emphasis & Fonts :books:
  
 - Wrap a table around tabular to make captions
 
@@ -499,7 +499,7 @@ Customer  \= Name \hspace*{1.5cm} \= Street \hspace*{1.5cm} \= City \\
  ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Accent Characters
+### Accent Characters :mahjong:
 
 - These is a package that allows you to enter accented characters
 - `\usepackage[utf8]{inputenc}` on Linux/MacOS and 
@@ -555,7 +555,7 @@ We can {\sffamily temporarily change} a font family, \ttfamily or change it for 
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Math Formulas 
+### Math Formulas :triangular_ruler: :bar_chart: :straight_ruler:
  
 - Using this package : `\usepackage{amsmath}`
 - `flalign*` with formula surrounded with `&`s makes it left justified
@@ -621,7 +621,7 @@ Binary Operation/Relation Symbols $ \approx, \asymp, \bowtie, \cong, \dashv, \do
 ```
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
-### Text Boxes & Justification 
+### Text Boxes & Justification :page_facing_up:
   
 - You can center text
  
@@ -667,7 +667,7 @@ One advantage of talking to yourself is that you know at least somebody's listen
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
-### Referencing Content
+### Referencing Content :scroll:
 
 - You can add footnotes and override the numbering 
 - Add a 5 pts of space between this line and the next
