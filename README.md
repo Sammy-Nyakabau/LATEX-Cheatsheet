@@ -47,7 +47,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ```tex
 \documentclass[a4paper,12pt]{book}
 ```
-
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Layout
@@ -66,7 +66,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 ```tex
 \documentclass[a4paper,12pt, landscape, twocolumn]{book}
 ```
-
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Packages
@@ -139,7 +139,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
 \makeindex
 
 ```
-
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Custom Commands
@@ -163,7 +163,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
   % Using custom command 
   Style to \typew{typewriter}.
    ```
-
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Document Environment
@@ -251,6 +251,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
   ```tex 
   \newpage
   ``` 
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Using Pictures
@@ -303,6 +304,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
     
     \endgroup
     ```
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Spacing
@@ -334,6 +336,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
   ```tex
   \bigskip
   ```
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Lists
@@ -358,6 +361,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
   ```
  
 - `\item[customNumbering]` allows for any numbering scheme
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
  
 #### Numbered Lists
@@ -398,6 +402,7 @@ This repo contains small code snippets (with explanation) that highlight the fun
  ```tex
   \setlist{nolistsep}
  ```
+ ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
  ---
  
  #### Definition Lists
@@ -426,6 +431,7 @@ Customer  \= Name \hspace*{1.5cm} \= Street \hspace*{1.5cm} \= City \\
 \> Sammy Nyakabau \> --- \> --- \\
 \end{tabbing}
 ```
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 ### Tables, Type Emphasis & Fonts
  
@@ -490,6 +496,7 @@ Customer  \= Name \hspace*{1.5cm} \= Street \hspace*{1.5cm} \= City \\
   Jane & Doe & 00\\
   \end{tabular}//
  ```
+ ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Accent Characters
@@ -501,6 +508,7 @@ Customer  \= Name \hspace*{1.5cm} \= Street \hspace*{1.5cm} \= City \\
     \'{a} \^{e} `{o} \"{u} \.{a} \={o} \~{n} \u{a} \H{a} \v{e} \t{oo} \c{c} \d{n} \b{i}
   ```
 - There are numerous fonts [here](http://www.tug.dk/FontCatalogue/) 
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### More Type Emphasis 
@@ -544,6 +552,7 @@ We can {\sffamily temporarily change} a font family, \ttfamily or change it for 
 - Fred Allen
 \end{quote} 
 ```
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Math Formulas 
@@ -610,6 +619,7 @@ Binary Operation/Relation Symbols $ \approx, \asymp, \bowtie, \cong, \dashv, \do
 \equiv, \frown, \mid, \models, \parallel, \perp, \prec, \preceq, \propto, \sim, \simeq, \smile, 
 \succ, \succeq, \vdash $ \\
 ```
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 ### Text Boxes & Justification 
   
@@ -654,6 +664,7 @@ One advantage of talking to yourself is that you know at least somebody's listen
  
 \end{minipage}
 ```
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
 ### Referencing Content
@@ -679,6 +690,7 @@ How I learned my ABCs \cite{ABCAFR}.
 \bibitem{ABCAFR} Walter Abish \emph{The Alphabetical Africa}, 1974
 \end{thebibliography} 
 ```
+##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
  
 
