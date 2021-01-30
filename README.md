@@ -42,13 +42,13 @@ This repo contains small code snippets (with explanation) that highlight the fun
 - In the preamble we define document wide rules
 - **Paper type** : _letterpaper_ (11 x 8.5 in), _a4paper_ (29.7 x 21 cm), _legalpaper_ (14 × 8.5 in), _a5paper_ (21×14.8 cm), _executivepaper_ (10.5×7.25 in), and _b5paper_ (25×17.6 cm)
 
-#### Example | Paper Types
+##### Example | Paper Types
 
 ```tex
 \documentclass[a4paper,12pt]{book}
 ```
+
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
----
 
 ### Layout :pencil:
 
@@ -61,11 +61,66 @@ This repo contains small code snippets (with explanation) that highlight the fun
   - **openright** : If twoside is used chapters begin on right hand page
   - **landscape** : If listed it displays in landscape
 
-#### Example | Layout Types
+##### Example | Layout Types
 
 ```tex
 \documentclass[a4paper,12pt, landscape, twocolumn]{book}
 ```
+#### Standard Page Layout
+- There are many LATEX commands controlling various dimensional parameters of the page layout for a document
+
+|  Layout 	      |   Command       |  Function |   	    
+|---	            |---	            |---	      |	    
+| Main Texts      |- `\textheight` <br> - `\textwidth` <br> -`\oddsidemargin` <br> <br> -`\evensidemargin` |  - Height of main texts without header and footer.	<br> - Width of main texts without marginal notes. <br> - Blank space on the leftmargin of odd-numbered pages, if both-side printing is opted (both-side printing can be opted using the **twoside** option to the `\documentclass[ ]{ }` command). <br> - Blank space on the left margin of even-numbered pages (active only when both-side printing is opted). |  
+|   Columns	      |  - `\columnsep` <br> - `\columnseprule` <br> <br>-`\columnwidth` <br> <br> -`\linewidth` 	      |  - Gap between two columns in multi-column mode <br> - Width of the vertical line separating two columns in multi-column mode (default value is zero so as to make the line invisible). <br> - Width of a column in multi-column mode (calculated using the values of `\textwidth` and `\columnsep`). <br>- Width of the lines of texts (usually equal to `\columnwidth`, but may vary in some environments, like the **quotation** environment).	      |   	    
+|  Header 	      | - `\headheight` <br> - `\headsep` <br> -`\topmargin`  	      |  - Height of the header. <br> - Vertical gap between the header and the first line of the main texts. <br> -Extra vertical space above the header. 	      |   	    
+|  Footer 	      |  `\footskip` 	      |  Vertical gap between the last line of the main texts and the footer.  	      |   	    
+| Marginal Notes  	      | -`\marginparwidth` <br> - `\marginparsep` <br> -`\marginparpush` 	      |  - Width of marginal notes. <br> - Horizontal gap between the main texts and marginal notes. <br> - Vertical space between two successive marginal notes.	      |
+
+
+![Page Layout](Page%20Layout.png)
+
+#### Mini Pages
+- dividing a portion of a page into a number of width-wise parts, usually for presenting related materials side-by-side, e.g., two tables for comparison purpose, a picture and its description, or LATEX input and its output
+##### Example | Mini Pages
+
+```tex
+\documentclass[11pt,a4paper]{article}
+\usepackage{boxedminipage}
+%
+\begin{document}
+  %
+  \begin{minipage}[t]{5.0cm}
+    This minipage is … width is 5.0\,cm.
+  \end{minipage}
+  %
+  \begin{boxedminipage}[t]{0.4\linewidth}
+    This boxed-minipage is also …
+  \end{boxedminipage}
+  %
+\end{document}
+```
+#### Multicols
+- provides a flexible approach to generate multiple columns
+-  documentation [here](http://ctan.imsc.res.in/macros/latex/required/tools/multicol.pdf)
+##### Example | Multicols
+
+```tex
+\documentclass[11pt,a4paper]{article}
+\usepackage{multicol}
+\columnseprule = 0.5mm
+%
+\begin{document}
+  This is an example where a . . .
+  %
+  \begin{multicols}{3}
+    This is a three-column paragraph. . . .
+  \end{multicols}
+  %
+  In this example, all the three . . .
+\end{document}
+```
+---
 ##### **[Back To Top :arrow_up:](https://github.com/Sammy-Nyakabau/LATEX-Cheatsheet#table-of-contents-book)**
 ---
 
